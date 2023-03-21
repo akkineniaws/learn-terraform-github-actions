@@ -18,13 +18,13 @@ terraform {
     organization = "A-Terraform-Demos"
 
     workspaces {
-      name = "a-demo-github-actions"
+      name = "demo-github-actions"
     }
   }
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-1"
 }
 
 resource "random_pet" "sg" {}
